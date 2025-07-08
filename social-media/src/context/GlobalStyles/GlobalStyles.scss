@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Áp dụng biến trong context theme */
+.light {
+    --textColor: #000;
+    --bg: #fff;
+    --logo: #384f64;
+    --bgSoft: #f6f3f3;
+    --textColorSoft: #555;
+    --border: lightgray;
+    --iconColor: #333;
+}
+
+.dark {
+    --textColor: #fff;
+    --bg: #222;
+    --logo: #fff;
+    --bgSoft: #333;
+    --textColorSoft: rgb(226, 224, 224);
+    --border: #444;
+    --iconColor: white;
+}
+
+.light body,
+.dark body {
+    color: var(--textColor);
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+}
+
+.logo {
+    color: var(--logo);
+}
+
+.card {
+    background-color: var(--bgSoft);
+    color: var(--textColorSoft);
+}

@@ -1,0 +1,87 @@
+.register {
+    height: 100vh;
+    background-color: #6c9ebd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #fff;
+        border-radius: 10px;
+        min-height: 600px;
+        overflow: hidden;
+
+        .left {
+            flex: 1;
+            background:
+                linear-gradient(rgba(72, 135, 176, 0.5), rgba(158, 192, 208, 0.5)),
+                url('https://tse4.mm.bing.net/th/id/OIP.HW1PGHDktbshv2Eus9g4NQHaLG?pid=ImgDet&w=182&h=273&c=7&o=7&rm=3'),
+                center;
+            background-size: cover;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: #fff;
+
+            h1 {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            p {}
+
+            span {
+                font-size: 14px;
+            }
+
+            button {
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: #fff;
+                color: #033f64;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+        }
+
+        .right {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+
+            h1 {
+                color: #4887b0;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                }
+
+                button {
+                    width: 80px;
+                    padding: 10px;
+                    border: none;
+                    background-color: #6c9ebd;
+                    color: #fff;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
